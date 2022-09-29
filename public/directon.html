@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous">
+            </script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+    </head>
+
+    <body>
+        <title>Control Blinds Automatically</title>
+        <div class="page" style="background: pink;">
+    
+            <table class="table">
+                <tbody>
+                    <tr class="heading">
+                        <th>Rooms</th>
+                        <th>Redirect</th>
+                    </tr>
+
+                    /** EXAMPLE FOR HOW TO LINK
+                    <tr class="room1">
+                        <td class="room1">1</td>
+                        <td class="room1">
+                            <button type="button" onclick = "document.location='default.asp'">
+                                clicks
+                                
+                            </button>
+                        </td>
+                    </tr>
+
+                    EXAMPLE 2
+                    button onClick="location.href='index.html'"
+                    value='click here'>
+                    /**
+
+                    <!-- assigning rooms in a table format -->
+                    <tr class="room1" onclick="move('1', '/');">
+                        <td class="room1">1</td>
+                        <td class="room1">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room2" onclick="move('2', '/');">
+                        <td class="room2">2</td>
+                        <td class="room2">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room3" onclick="move('3', '/');">
+                        <td class="room3">3</td>
+                        <td class="room3">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room4" onclick="move('4', '/');">
+                        <td class="room4">4</td>
+                        <td class="room4">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room5" onclick="move('5', '/');">
+                        <td class="room5">5</td>
+                        <td class="room5">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room6" onclick="move('6', '/');">
+                        <td class="room6">6</td>
+                        <td class="room6">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room7" onclick="move('7', '/');">
+                        <td class="room7">7</td>
+                        <td class="room7">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room8" onclick="move('8', '/');">
+                        <td class="room8">8</td>
+                        <td class="room8">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room9" onclick="move('9', '/');">
+                        <td class="room9">9</td>
+                        <td class="room9">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="room10" onclick="move('10', '/');">
+                        <td class="room10">10</td>
+                        <td class="room10">
+                            <button type="button">
+                                click to control blinds
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            function move(otherRoom, link) {
+                localStorage.setItem('send_otherRoom', otherRoom)
+                window.location.href = link;
+            }
+        </script>
+    </body>
+</html>
