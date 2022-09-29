@@ -1,0 +1,62 @@
+
+*
+{
+    position: center;
+}
+
+th
+{
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+
+#conn_status[type="connection unsuccessful"]
+{
+    background: red;
+    text-align: center;
+    color: black;
+    padding-top: 5%;
+}
+
+#conn_status[type="connection successful"]
+{
+    background: green;
+    text-align: center;
+    color: black;
+    padding-top: 5%;
+}
+
+.image
+{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.vertical
+{
+  display: block;
+  flex-basis: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 640px) {
+  .vertical {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 960px ){
+  .vertical{
+    flex-basis: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1280px ){
+  .vertical{
+    flex-basis: 25%;
+  }
+}
