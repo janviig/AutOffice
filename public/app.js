@@ -40,14 +40,14 @@ connect.om('blind', data =>
 function initial()
 {
     document.getElementById('blindImage')
-    .src="open.jpg";
+    .src="on.jpg";
 }
 
 //intialising image for closing
 function finish()
 {
     document.getElementById('blindImage')
-    .src="closed.jpg";
+    .src="off.jpg";
 }
 
 //controlling the buttons
@@ -99,36 +99,5 @@ function callUI(bli)
         id="blind_${bli > 0 ? bli + bli + z: bli + z}">  
         </div>`; 
         return `<div> ${body} </div>`;
-    }
-}
-
-//linking to the node controller page where blinds number and button is located
-if(home)
-{
-    var value = -1;
-    var sub = 1;
-    for(var z = 0; z < blinds; z++)
-    {
-        $('tbody').append(`
-        <tr class="room_${z + 1}" 
-        onclick="button(${z}, 'room${z + 1}');" 
-        state="off">
-
-            <td class="room${z + 1}"> 
-            Node <b>${z + 1}</b> 
-            </td>
-
-            <td class="room_${z + 1}"> 
-            <button type="button">click to control blinds</button> 
-            </td>
-        </tr>
-        `);
-    }
-}
-else
-{
-    for(var z = 0; z < nodes; z++)
-    {
-        $('tbody').append(callUI(z));
     }
 }
