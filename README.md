@@ -1,6 +1,6 @@
-# AutoOffice
+# Automating office lights project
 
-IoT project for lights to work in a office, creating a control panel for the lights, for making the system scalable
+IoT project for lights to work in a office, creating a control panel for the lights, for making the system scalable 
 Consists of:
 - Simple HTML website created
 - Deployed via Heroku
